@@ -1,2 +1,2 @@
-This is the first git version.
-This is the first git free software.
+This is second git version.
+This is second git free software.
