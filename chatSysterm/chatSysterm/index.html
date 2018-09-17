@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+<body>
+  <!-- 登录注册 -->
+  <div id="wrapper">
+    <div class="pages" id="page1">
+        <h1>登录界面</h1>
+        <p>
+            <label for="login_userName"> 账号</label>
+            <input id="login_userName" name="login_userName"  type="text"  />
+        </p>
+        <p>
+            <label for="login_pwd"> 密码 </label>
+            <input id="login_pwd" name="login_pwd" type="password" />
+        </p>
+
+        <p class="button">
+          <input id="login" type="submit" value="登录" />
+				</p>
+        <p class="change">没有账号？点击<span class="choose">注册</span></p>
+    </div>
+
+    <div class="pages" id="page2">
+        <h1>欢迎注册</h1>
+        <p>
+            <label for="reg_userName"> 用户名</label>
+            <input id="reg_userName" name="reg_userName" required="required" type="text" placeholder="长度6-100，必须以英文字母开头，不包含中文字符"  />
+        </p>
+        <p>
+            <label for="reg_nickName"> 昵称 </label>
+            <input id="reg_nickName" name="reg_nickName" required="required" type="text" placeholder="长度20位以内"/>
+        </p>
+        <p>
+            <label for="reg_pwd"> 密码 </label>
+            <input id="reg_pwd" name="reg_pwd" required="required"  type="password" placeholder="长度6位以上，不包含中文字符"/>
+        </p>
+        <p class="button">
+          <input id="register" type="submit" value="注册" />
+        </p>
+    </div>
+  </div>
+  <!-- 主页面 -->
+  <div class="main">
+    <div class="content">
+      <div class="left">
+        <div class="myInfo clearfix">
+          <span class="myUserName"></span>
+          <span class="logout">退出</span>
+        </div>
+        <div class="myGroup">
+          <span class="active">在线用户<b class="tab1"></b></span>
+          <span>好友列表<b class="tab2"></b></span>
+          <span>系统通知<b class="tab3"></b></span>
+        </div>
+        <div class="list">
+          <ul class="tab onlineList">
+          </ul>
+          <ul class="tab friendList">
+          </ul>
+          <ul class="tab systermMsg">
+          </ul>
+        </div>
+      </div>
+      <div class="right scale">
+        <div class="noMsg">
+          <span class="pointer"></span>
+          <span>选择好友聊天对象</span>
+        </div>
+      </div>
+    </div>
+    <!-- 标题文字 -->
+    <div class="side">
+      <span>畅聊无限</span>
+      <span>乐享沟通</span>
+    </div>
+  </div>
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="layer/layer.js"></script>
+  <script type="text/javascript" src="mywork.js"></script>
+</body>
+</html>
