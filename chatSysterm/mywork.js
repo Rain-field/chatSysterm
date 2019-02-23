@@ -87,6 +87,7 @@ F5();
   })
 // 点击好友弹出聊天框
   $(document).on("click",".friendList li",function(){
+    console.log("sdfs");
   	// F5();
     // 保存当前点击项上的自定义属性昵称和id
     var nickName=$(this).attr("data-nickname");
@@ -220,9 +221,9 @@ F5();
         password:$("#login_pwd").val(),
       },
       success:function(res){
-        console.log(this);
+        // console.log(this);
         var data = res.data;
-        console.log(res);
+        // console.log(res);
         if (res.code === 0) {
         	if (!data.login_time) {
           	layer.msg("登陆成功,上一次登录时间:"+data.login_time,{time:2000});
@@ -381,7 +382,7 @@ F5();
         process_result: c,//处理结果1为同意，2为拒绝，3为拒绝并不再接收此人好友申请
       },
       success:function(res){
-      	console.log(res);
+      	// console.log(res);
         // 调用获取好友申请接口和获取好友列表接口
         getFriendRequest();
         getFriendList();
